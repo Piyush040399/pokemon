@@ -1,8 +1,8 @@
-import PokePage from "./pokemons/page";
+import PokemonPage from "./pokemons/page";
 
 
 export default function Home() {
 
 
-  return <h1><PokePage/></h1>;
+  return <h1><PokemonPage/></h1>;
 }

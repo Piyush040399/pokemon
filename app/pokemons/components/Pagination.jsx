@@ -1,3 +1,5 @@
+'use client';
+
 export default function Pagination({ page, totalPages, onPrev, onNext }) {
   return (
     <div className="flex items-center justify-between mt-4">
@@ -6,12 +8,10 @@ export default function Pagination({ page, totalPages, onPrev, onNext }) {
         disabled={page === 1}
         className="px-4 py-2 border rounded disabled:opacity-50"
       >
-        Previous
+        Prev
       </button>
 
-      <span>
-        Page {page} of {totalPages}
-      </span>
+      <span> Page {page} of {totalPages} </span>
 
       <button
         onClick={onNext}
